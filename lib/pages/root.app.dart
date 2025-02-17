@@ -3,7 +3,6 @@ import 'package:antdesign_icons/antdesign_icons.dart';
 import 'package:bank_app0/pages/dashboard.page.dart';
 import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter_splash_screen/flutter_splash_screen.dart';
 
 import '../constants/theme/color.dart';
 
@@ -13,14 +12,6 @@ class RootApp extends StatefulWidget {
   @override
   State<RootApp> createState() => _RootAppState();
 }
-
-// @override
-// void initState() {
-//   // super.initState();
-//   Future.delayed(Duration(seconds: 3), () {
-//     FlutterSplashScreen.hide();
-//   });
-// }
 
 class _RootAppState extends State<RootApp> {
   int pageIndex = 0;
@@ -105,26 +96,3 @@ class _RootAppState extends State<RootApp> {
     );
   }
 }
-
-// class SplashDemo extends StatefulWidget {
-//   @override
-//   _SplashDemoState createState() => _SplashDemoState();
-// }
-
-// class _SplashDemoState extends State<SplashDemo> {
-//   @override
-//   void initState() {
-//     super.initState();
-//     Future.delayed(Duration(seconds: 3), () {
-//       FlutterSplashScreen.hide();
-//     });
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(title: Text("Home Screen")),
-//       body: Center(child: Text("Welcome to the App!")),
-//     );
-//   }
-// }
