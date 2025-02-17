@@ -1,5 +1,5 @@
 import 'dart:ui';
-import 'package:bank_app0/theme/color.dart';
+import 'package:bank_app0/constants/theme/color.dart';
 // import 'package:banking_app/theme/color.dart';
 
 const List cardLists = [

@@ -1,6 +1,8 @@
+import 'package:bank_app0/constants/sizes.dart';
+import 'package:bank_app0/constants/text.strings.dart';
 import 'package:bank_app0/data_json/card_json.dart';
 import 'package:bank_app0/data_json/card_operations_json.dart';
-import 'package:bank_app0/theme/color.dart';
+import 'package:bank_app0/constants/theme/color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 
@@ -36,7 +38,7 @@ class _CardPageState extends State<CardPage> {
             size: 22,
           )),
       title: Text(
-        "Card",
+        MTexts.card,
         style: TextStyle(fontSize: 18, color: MColors.black),
       ),
       actions: [
@@ -58,7 +60,7 @@ class _CardPageState extends State<CardPage> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          SizedBox(height: 10),
+          SizedBox(height: MSizes.spaceBtwItemsHEIGHT_M),
           Container(
             width: double.infinity,
             height: 240,
@@ -75,7 +77,7 @@ class _CardPageState extends State<CardPage> {
               }),
             ),
           ),
-          SizedBox(height: 20),
+          SizedBox(height: MSizes.spaceBtwItemsHEIGHT_LM),
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
@@ -104,7 +106,7 @@ class _CardPageState extends State<CardPage> {
                                       color: MColors.primary, width: 3.5))),
                           child: Center(
                             child: Text(
-                              "Operations",
+                              MTexts.operation,
                               style: TextStyle(
                                   fontSize: 15,
                                   color: MColors.primary,
@@ -126,7 +128,7 @@ class _CardPageState extends State<CardPage> {
                           ),
                           child: Center(
                             child: Text(
-                              "History",
+                              MTexts.history,
                               style: TextStyle(
                                   fontSize: 15,
                                   color: MColors.primary.withOpacity(0.5),
@@ -138,7 +140,7 @@ class _CardPageState extends State<CardPage> {
                     ],
                   ),
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: MSizes.spaceBtwItemsHEIGHT_LM),
                 Column(
                   children: List.generate(cardOperations.length, (index) {
                     return Padding(
@@ -174,7 +176,7 @@ class _CardPageState extends State<CardPage> {
                                 ),
                               ),
                               SizedBox(
-                                width: 15,
+                                width: MSizes.spaceBtwItemsWIDTH_L,
                               ),
                               Text(
                                 cardOperations[index]['title'],
@@ -188,7 +190,7 @@ class _CardPageState extends State<CardPage> {
                     );
                   }),
                 ),
-                SizedBox(height: 30)
+                SizedBox(height: MSizes.spaceBtwItemsHEIGHT_XXL)
               ],
             ),
           ),
@@ -215,7 +217,7 @@ class _CardPageState extends State<CardPage> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(width: 5),
+            SizedBox(width: MSizes.spaceBtwItemsWIDTH),
             Text(
               amount,
               style: TextStyle(
@@ -225,7 +227,7 @@ class _CardPageState extends State<CardPage> {
             ),
           ],
         ),
-        SizedBox(height: 15),
+        SizedBox(height: MSizes.spaceBtwItemsHEIGHT_L),
         Container(
           width: size.width * 0.85,
           height: 170,
@@ -247,7 +249,7 @@ class _CardPageState extends State<CardPage> {
                       color: MColors.white.withOpacity(0.3),
                     ),
                     SizedBox(
-                      height: 15,
+                      height: MSizes.spaceBtwItemsHEIGHT_L,
                     ),
                     Text(
                       cardNumber,
@@ -265,13 +267,13 @@ class _CardPageState extends State<CardPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "VALID DATE",
+                          MTexts.valDate,
                           style: TextStyle(
                               color: MColors.white.withOpacity(0.3),
                               fontSize: 12),
                         ),
                         SizedBox(
-                          height: 4,
+                          height: MSizes.spaceBtwItemsHEIGHT_S,
                         ),
                         Text(
                           validDate,
@@ -279,10 +281,10 @@ class _CardPageState extends State<CardPage> {
                         ),
                       ],
                     ),
-                    Image.asset(
-                      "assets/images/master_card_logo.png",
-                      width: 50,
-                    )
+                    // Image.asset(
+                    //   "assets/master_card_logo.png",
+                    //   width: 50,
+                    // )
                   ],
                 )
               ],

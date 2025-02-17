@@ -4,7 +4,7 @@ import 'package:bank_app0/pages/dashboard.page.dart';
 import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/material.dart';
 
-import '../theme/color.dart';
+import '../constants/theme/color.dart';
 
 class RootApp extends StatefulWidget {
   const RootApp({super.key});
@@ -67,7 +67,7 @@ class _RootAppState extends State<RootApp> {
     return IndexedStack(
       index: pageIndex,
       children: [
-        DashbaordPage(),
+        DashboardPage(),
         // Center(
         //   child: Text(
         //     "Dashboard Page",

@@ -5,7 +5,7 @@ class MColors {
 
 // App Colors
 
-  static const Color primary = Color(0xFF0064F5);
+  static const Color primary = Color.fromARGB(255, 22, 129, 13);
   static const Color secondary = Color(0xFF7BB0FF);
   static const Color black = Colors.black;
   static const Color white = Colors.white;
