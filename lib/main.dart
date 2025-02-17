@@ -9,12 +9,3 @@ void main() {
     home: RootApp(),
   ));
 }
-
-// ///hide your splash screen
-// Future<void> hideScreen() async {
-//   Future.delayed(Duration(milliseconds: 1800), () {
-//     FlutterSplashScreen.hide();
-//   });
-// }
-
-
