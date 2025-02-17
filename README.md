@@ -2,7 +2,7 @@
 
 Flutter project.
 
-![BANKING APP UI](https://github.com/Arimir727/bank_app0/blob/main/assets/app_images/md_Bank_App_UI_SAMPLE%20(Homescreen).png?raw=true)
+![BANKING APP UI](https://github.com/Arimir727/bank_app0/blob/main/assets/app_images/md_Bank_App_UI_SAMPLE%20(Homescreen).png)
 
 ### Getting Started
 This is a starting point for a Flutter Application.
