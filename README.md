@@ -7,7 +7,7 @@ Flutter project.
 
 ![BANKING APP UI](https://github.com/Arimir727/bank_app0/blob/main/assets/app_images/md_Bank_App_UI_SAMPLE%20(Homescreen).png)
 
-![BANKING APP UI GIF]()
+![BANKING APP UI GIF](https://github.com/Arimir727/bank_app0/blob/main/assets/app_images/BANK_APP_UI003.gif)
 =======
 ![BANKING APP UI](https://github.com/Arimir727/bank_app0/blob/main/assets/app_images/md_Bank_App_UI_SAMPLE%20(Homescreen).png)
 >>>>>>> 529af02110d1697e34222804ea7f9d700b20990f
